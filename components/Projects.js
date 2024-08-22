@@ -87,7 +87,12 @@ const Projects = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img src="/Project_BookNest.png" alt="BookNest Landing Section"/>
+           <Image
+              src="/Project_BookNest.png"
+              alt="SimplePlanets.com Landing Section"
+              width={700}
+              height={438}
+            />
           </a>
         </div>
       </article>
