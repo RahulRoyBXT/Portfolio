@@ -22,7 +22,7 @@ const About = () => {
               building web applications, and contributing to open-source
               projects. I am particularly passionate about creating
               user-friendly, responsive interfaces, and have been honing my
-              skills by working on personal projects like 'Flavorly,' a web app
+              skills by working on personal projects like &apos;Flavorly,&apos; a web app
               that suggests recipes based on available ingredients. My goal is
               to continue growing as a full-stack developer and bring creative
               solutions to real-world challenges.
@@ -34,19 +34,19 @@ const About = () => {
             <h1>Languages / Skills</h1>
             <p>
               <bold>Javascript</bold> is my main language with{" "}
-              <bold>ReactJS</bold> being my perfered <bold>Front-End</bold>{" "}
+              <bold>ReactJS</bold> being my preferred <bold>Front-End</bold>{" "}
               framework. My favorite stack is <bold>Javascript</bold>,{" "}
               <bold>ReactJS</bold>,<bold>Redux</bold>, <bold>Tailwind</bold>,{" "}
               <bold>HTML</bold>, <bold>CSS</bold>,{" "}
               <bold>Styled-Components</bold>, <bold>Bootstrap</bold>,{" "}
-              <bold>GSAP</bold>, <bold>Framer Motion</bold> . A list of my
+              <bold>GSAP</bold>, <bold>Framer Motion</bold>. A list of my
               frameworks and languages is:
-              <bold> JavaScript</bold>, <bold> Python </bold>,{" "}
+              <bold>JavaScript</bold>, <bold>Python</bold>,{" "}
               <bold>ReactJS</bold>,<bold>Redux</bold>, <bold>Tailwind</bold>,{" "}
               <bold>HTML</bold>, <bold>CSS</bold>,{" "}
               <bold>Styled-Components</bold>, <bold>Bootstrap</bold>,{" "}
               <bold>GSAP</bold>, <bold>Framer Motion</bold>, <bold>NodeJS</bold>
-              , <bold> Django</bold>, <bold>ExpressJS</bold>,{" "}
+              , <bold>Django</bold>, <bold>ExpressJS</bold>,{" "}
               <bold>MongoDB</bold>, <bold>APIs</bold>.
             </p>
           </div>
@@ -57,7 +57,7 @@ const About = () => {
             <h1>Passion for Learning</h1>
             <p>
               I thrive on learning new technologies and applying them to solve
-              problems creatively. Whether it's exploring the latest trends in
+              problems creatively. Whether it&apos;s exploring the latest trends in
               Web3 or diving into the intricacies of JavaScript frameworks, I am
               always eager to expand my knowledge. My enthusiasm for continuous
               learning drives me to take on challenges, collaborate with others,
