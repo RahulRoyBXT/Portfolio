@@ -14,14 +14,15 @@
 @media only screen and (max-width: 950px) {
   .mobile-header {
     display: block !important;
+
   }
 
   .hamburger-button{
     height: 100px;
     width: 100px;
     border:10px solid white;
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: -6%;
     left: -5%;
 
   }
@@ -30,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     right: 0z;
     z-index: 100;
     margin-left: auto;
@@ -42,6 +43,7 @@
     transition-timing-function: linear;
     transition-duration: 0.15s;
     transition-property: opacity, filter;
+    rotate: 180deg;
   }
 
   .side-bar {
@@ -268,6 +270,10 @@
   font-weight: 600;
   letter-spacing: 3px;
   cursor: pointer;
+}
+.nav-title{
+  height: 50%;
+  margin-top: 30px;
 }
 
 .header .right-side {

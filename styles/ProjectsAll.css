@@ -21,7 +21,7 @@
     /* display: none; */
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@
     max-height: 100%; /* Adjust as needed */
     min-width: 70%;
     max-width: 70%;
-    background-color: #112240;
+    /* background-color: #112240; */
     color: #a8b2d1;
     padding: 10px;
     font-size: 14px;
@@ -39,7 +39,9 @@
     text-overflow: ellipsis;
     overflow: auto;
     scrollbar-width:thin;
-    scrollbar-color: #031b42 #000;
+    scrollbar-color: #000 #000;
+    background: linear-gradient(to right, #0E131B 10%, #0E131B 60%);
+    
     
 }
 
@@ -47,10 +49,15 @@
     position: relative;
     height: 100%;
     width: 30%;
-    border:20px solid #031b42;
-    background-color: black;
+    border:20px solid #0E131B;
+    background-color: #0E131B;
     object-fit: fill;
+
 }
+#projectImage{
+  border-radius: 20px;
+}
+
 #pre{
     display: none;
 }
@@ -75,7 +82,7 @@
         /* display: none; */
         height: 100%;
         width: 100%;
-        background-color: whitesmoke;
+        /* background-color: whitesmoke; */
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -86,7 +93,8 @@
         max-height: 55%; /* Adjust as needed */
         min-width: 100%;
         max-width: 100%;
-        background-color: #112240;
+        /* background-color: #112240; */
+        background: linear-gradient(to right, #0E131B 10%, #0E131B 60%);
         color: #a8b2d1;
         padding:10px;
         font-size: 14px;
@@ -95,7 +103,9 @@
         overflow: auto;
         scrollbar-width:thin;
         scrollbar-color: #031b42 #000;
-        border-bottom: 2px dashed #766e6e;
+        /* border-bottom: 2px dashed #766e6e; */
+        border-top: linear-gradient(to right, #141621 40%, #28292e 60%);
+        border-top-right-radius: 20px;
         
     }
 
@@ -108,8 +118,8 @@
         position: relative;
         height: 45%;
         width: 100%;
-        border:10px solid #031b42;
-        background-color: black;
+        /* border:10px solid #031b42; */
+        background-color: #0E131B;
         object-fit: fill;
     }
     #preMain{

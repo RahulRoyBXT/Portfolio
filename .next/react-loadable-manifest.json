@@ -1,8 +1,8 @@
 {
-  "index.js -> locomotive-scroll": {
-    "id": 8626,
+  "pages\\index.js -> locomotive-scroll": {
+    "id": 7138,
     "files": [
-      "static/chunks/626.32e0b8040a0ce4b9.js"
+      "static/chunks/626.c3ac999904a9ec9a.js"
     ]
   }
 }

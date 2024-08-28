@@ -25,7 +25,7 @@ const Navbar = () => {
     setMobileNavOpen(!mobileNavOpen);
   }
 
-  useEffect(() => {
+  useGSAP(() => {
     const tl = gsap.timeline();
 
     // Use `current` to access the DOM node

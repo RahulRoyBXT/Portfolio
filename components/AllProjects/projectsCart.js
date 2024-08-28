@@ -15,9 +15,9 @@ const ProjectsCart = ({ projects }) => {
             </div>
             <div className="pcart-img">
               <Image
+              id='projectImage'
                 src={project.image}
-                layout="fill"
-                objectFit="cover"
+                fill style={{ objectFit: 'cover' }}
                 alt="Project Image"
               />
             </div>

@@ -2,29 +2,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faXbox,
-  faLetterboxd,
-  faSquareLetterboxd,
-  faSlideshare,
-  faConnectdevelop,
-  faContao,
-  faMailchimp,
-  faAmilia,
-  faMandalorian,
-  faGg,
-  faGooglePlusSquare,
-  faGooglePlus
 } from "@fortawesome/free-brands-svg-icons";
 import { faGooglePlusG } from "@fortawesome/free-brands-svg-icons/faGooglePlusG";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const IAm = () => {
 
   
   const hello = useRef(null);
   const myName = useRef(null);
-  useEffect(() => {
+  useGSAP(() => {
     const tl = gsap.timeline();
     tl.from(hello.current, {
       fontSize: 0,

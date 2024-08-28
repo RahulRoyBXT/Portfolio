@@ -54,11 +54,13 @@
   z-index: 2;
   padding: 25px;
   border-radius: 4px;
-  background-color: #112240;
+  /* background-color: red; */
+  /* background: linear-gradient(to right, red, yellow); */
   color: #a8b2d1;
   font-size: 14px;
   font-family: 'Montserrat', 'sans-serif';
 }
+
 
 .project-tech-list {
   display: flex;
@@ -111,7 +113,7 @@
   width: 40%;
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   margin-top: 10%;
-  background-color: #0a477c;
+  /* background-color: #0a477c; */
 }
 
 @media (max-width: 1050px) {
@@ -154,7 +156,7 @@
     margin-top: 0;
     min-width: 80vw;
     height: min-content;
-    background-color: #1e2438;
+    /* background-color: #1e2438; */
     margin-left: -20px;
     font-size:medium;
 

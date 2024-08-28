@@ -1,12 +1,13 @@
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect } from "react";
 
 const CodeDisplay = () => {
 
-  useEffect(()=> {
+  useGSAP(()=> {
     gsap.from('.code-section', {
       duration:1 ,
-      y: -100,
+      y:-100,
       opacity: 0,
       ease: 'power4.out',
       delay:3.1

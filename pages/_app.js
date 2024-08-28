@@ -4,6 +4,29 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import BlackLoader from '../components/BlackLoader.js';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+
+
+
+const filterWarnings = (message) => {
+  const ignoredWarnings = [
+    'FontAwesomeIcon: Support for defaultProps',
+  ];
+
+  return !ignoredWarnings.some(warning => message.includes(warning));
+};
+
+if (process.env.NODE_ENV === 'development') {
+  const originalConsoleError = console.error;
+  console.error = (...args) => {
+    if (filterWarnings(args[0])) {
+      originalConsoleError(...args);
+    }
+  };
+}
+
+
+
+
 function MyApp({ Component, pageProps }) {
   const mainPage =useRef(null);
 

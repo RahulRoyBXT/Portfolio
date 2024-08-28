@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ProjectsCart from "./projectsCart";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Projects = () => {
   const [currentProject, setCurrentProject] = React.useState(0);
@@ -40,7 +41,7 @@ const Projects = () => {
     },
   ];
 
-  useEffect(() => {
+  useGSAP(() => {
     const interval = setInterval(() => {
       gsap.to(".pcart-main h2, .pcart-des p, .pcart-img img", {
         opacity: 0,
