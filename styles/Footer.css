@@ -5,6 +5,8 @@
   border-top: 1px solid #a8b2d1;
   justify-content: center;
   align-items: center;
+  margin-top: 20vh;
+
 }
 
 .footer p {
@@ -15,4 +17,7 @@
   font-family: 'Montserrat', 'sans-serif';
   color: #a8b2d1;
   font-weight: 700;
+  margin-left:8% ;
+  margin-right: 8%;
+  text-align: center;
 }

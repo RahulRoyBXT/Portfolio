@@ -16,13 +16,51 @@ import {
   faGooglePlus
 } from "@fortawesome/free-brands-svg-icons";
 import { faGooglePlusG } from "@fortawesome/free-brands-svg-icons/faGooglePlusG";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const IAm = () => {
+
+  
+  const hello = useRef(null);
+  const myName = useRef(null);
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.from(hello.current, {
+      fontSize: 0,
+      duration: 1,
+      delay:3.2,
+      opacity: -1,
+      x: -150,
+      ease: "slow(0.7,0.7,false)"
+    })
+    tl.from(myName.current, {
+      fontSize: 0,
+      duration: 1,
+      opacity: -1,
+      x: -150,
+      ease: "slow(0.7,0.7,false)"
+    },"-=0.8")
+    tl.from('.adjust', {
+      fontSize: 0,
+      duration: 1,
+      opacity: -1,
+      x: -150,
+      ease: "slow(0.7,0.7,false)"
+    },"-=0.6")
+    tl.from('.socials', {
+      duration: 1,
+      y:-5,
+      yoyo: true,
+      repeat: -1,
+      ease: "slow(0.1,0.1,true)"
+    },"-=0.6")
+  });
   return (
     <section className="intro-section">
       <article className="intro-text">
-        <p>Hello, I’m</p>
-        <h1>Rahul Roy</h1>
+        <p ref={hello}>Hello, I’m</p>
+        <h1 ref={myName}>Rahul Roy</h1>
         <p className="adjust">Web Developer</p>
       </article>
       <div className="CTAs">

@@ -106,16 +106,13 @@
 }
 
 .projects-section .project-image {
+  position: relative;
   height: 50%;
   width: 40%;
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   margin-top: 10%;
-  padding: .5%;
+  background-color: #0a477c;
 }
-/* .projects-section .project-image image{
-  height: 100%;
-  width: 100%;
-} */
 
 @media (max-width: 1050px) {
   .project-content {
@@ -151,6 +148,7 @@
   }
 }
 
+
 @media (max-width: 690px) {
   .project-description {
     margin-top: 0;
@@ -164,7 +162,6 @@
   .projects-section .project-image {
     min-width: 70vw;
     height: 18vh;
-    background-color:rgb(110, 82, 49);
     padding: 0;
   }
 }

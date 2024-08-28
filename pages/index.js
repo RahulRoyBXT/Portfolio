@@ -1,10 +1,25 @@
+'use client';
 import Head from 'next/head'
 import LandingPage from '../components/LandingPage'
 import About from '../components/About'
-import Footer from '../components/Footer'
-import Projects from '../components/Projects'
+import Footer from '../components/footer/Footer'
+import Projects from '../components/AllProjects/Projectss'
+import { useEffect } from 'react'
 
 export default function Home() {
+
+
+  useEffect(() => {
+    (
+      async () =>{
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  },[])
+
+
+
   return (
     <div className='container'>
       <Head>

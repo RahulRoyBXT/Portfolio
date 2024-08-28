@@ -2,11 +2,9 @@
   display: none;
 }
 
-.topheader {
-  position: relative;
-  width: 100%;
-  background-color: #212731;
-  margin-top: -6px;
+.header{
+  height: 30%;
+  max-width: 100vw;
 }
 
 .header.scrolled {
@@ -18,12 +16,22 @@
     display: block !important;
   }
 
+  .hamburger-button{
+    height: 100px;
+    width: 100px;
+    border:10px solid white;
+    position: fixed;
+    top: 10%;
+    left: -5%;
+
+  }
+
   .hamburger-button, .close-button {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 0;
+    right: 0z;
     z-index: 100;
     margin-left: auto;
     padding: 30px 30px 15px;
@@ -79,9 +87,10 @@
 
 .hamburger-button .ham-box {
   display: inline-block;
-  position: relative;
+  position: absolute;
   width: 30px;
   height: 24px;
+  top:0;
 }
 
 .hamburger-button .ham-box-inner {
@@ -164,9 +173,12 @@
   -webkit-box-align: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   color: #ccd6f6;
   text-align: center;
+  position: absolute;
+  top: 10%;
 }
 
 .side-bar-open ol {

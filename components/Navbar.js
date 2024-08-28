@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link as ReactScrollLink} from 'react-scroll';
 import Link from 'next/link';
-import { motion } from "framer-motion";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Navbar = () => {
   const [hasScroll, setHasScroll] = useState(false);
@@ -24,6 +25,25 @@ const Navbar = () => {
     setMobileNavOpen(!mobileNavOpen);
   }
 
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    // Use `current` to access the DOM node
+    tl.from('.nav-title', {
+      duration: 1,
+      opacity: 0,
+      delay: 3.1,
+      y: -50,
+      ease: "slow(0.7,0.7,false)"
+    })
+    tl.from('.right-side', { // Access the DOM node with `current`
+      duration: 1,
+      opacity: 0,
+      y: -50,
+      ease: "slow(0.7,0.7,false)"
+    }, "-=0.5");
+  }, []); // Add dependencies if needed
+
   return (
     <>
       <header className={`header ${hasScroll ? 'scrolled' : ''}`}>
@@ -38,7 +58,7 @@ const Navbar = () => {
           <div className="right-side">
             <ReactScrollLink activeClass="active" to="main" spy={true} smooth={true} offset={-125}>Main</ReactScrollLink>
             <ReactScrollLink to="about" spy={true} smooth={true} offset={-125}>About</ReactScrollLink>
-            <ReactScrollLink to="projects" spy={true} smooth={true} offset={-125}>Projects</ReactScrollLink>\
+            <ReactScrollLink to="projects" spy={true} smooth={true} offset={-125}>Projects</ReactScrollLink>
             <a href="./Rahul_Roy_Resume.pdf" className="resume-link">Resume</a>
         </div>
       </header>

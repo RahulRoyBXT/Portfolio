@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 body.blur {
@@ -14,14 +15,14 @@ body.blur #content > * {
   filter: blur(5px) brightness(0.7);
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   pointer-events: none;
-  user-select: none;
+  /* user-select: none; */
 }
 
 html {
   background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
   height: 100%;
   background-attachment: fixed;
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
 }
 
 a {
@@ -43,6 +44,7 @@ bold {
 @import './About.css';
 @import './Projects.css';
 @import './Footer.css';
+@import './ProjectsAll.css';
 
 @font-face {
   font-family: 'Mandatory Plaything';
@@ -53,3 +55,4 @@ bold {
        url('/fonts/MandatoryPlaything-nRRd0.ttf')  format('truetype'),
        url('/fonts/MandatoryPlaything-nRRd0.svg#Mandatory Plaything') format('svg');
 }
+
