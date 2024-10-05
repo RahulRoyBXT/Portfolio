@@ -7,68 +7,129 @@
     height: auto;
     width: 100%;
     padding-left: 5%;
+
 }
 
 .projectWrapper{
+    background-color: #161F2B;
+    background-color: #3f5068;
     height: 80%;
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
     margin-bottom: 2%;
+    scrollbar-width: none; /* Firefox hides scrollbar */
+    display:"flex";
+    flex-Direction:"column";
+    overflow:'scroll'
+}
+
+.projectWrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera hide scrollbar */
 }
 
 
 .pcart-main{
-    /* display: none; */
-    height: 100%;
-    width: 100%;
-    /* background-color: whitesmoke; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    background-color: #161F2B; 
+    color: white; 
+    padding: 5px; 
+    border: 2px solid #3f5068;
+    justify-content: space-between;
 }
 .pcart-main .pcart-des {
-    min-height: 100%; /* Adjust as needed */
-    max-height: 100%; /* Adjust as needed */
-    min-width: 70%;
-    max-width: 70%;
-    /* background-color: #112240; */
-    color: #a8b2d1;
-    padding: 10px;
-    font-size: 14px;
+    height:100%;
+    width:68%;
     font-family: 'Montserrat', 'sans-serif';
-    text-overflow: ellipsis;
-    overflow: auto;
-    scrollbar-width:thin;
-    scrollbar-color: #000 #000;
-    background: linear-gradient(to right, #0E131B 10%, #0E131B 60%);
-    
-    
+    color: white;
 }
 
 .pcart-main .pcart-img{
-    position: relative;
-    height: 100%;
-    width: 30%;
-    border:20px solid #0E131B;
-    background-color: #0E131B;
-    object-fit: fill;
+    height:100%;
+    width:30%;
+    position:relative;
 
 }
 #projectImage{
-  border-radius: 20px;
+    object-fit:cover;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 #pre{
     display: none;
 }
+#scrollImage{
+    height:5px;
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grren;
+}
+#scrollImageMain{
+    height:5px;
+    width:50%;
+    background-color:black;
+    margin-bottom:10px;
+}
 
+#Sitelinks{
+    height: 15%;
+    width: 100%;
+    /* background-color: aliceblue; */
+}
+
+#Sitelinks a{
+    height: 100%;
+    width: 100%;
+    /* background-color: #031b42; */
+}
+#webLink{
+    height: 60%;
+    width: 50%;
+
+}
+#gitLink{
+    margin-top: 20px;
+    height: 60%;
+    width: 50%;
+}
 
 @media (max-width: 786px) {
 
+    #scrollImage{
+        height:5px;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    #scrollImageMain{
+        height:5px;
+        width:50%;
+        background-color:black;
+        margin-bottom:10px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        
+        transform: translate(-50%,-50%);
+    }
+
     #projects{
-        height: 80vh;
+        height: 50vh;
         width: 100%;
         margin-bottom: 5%;
+        position: relative;
+        border-radius: 20px;
     }
     .projectWrapper{
         height: 80%;
@@ -76,26 +137,31 @@
         margin-left: -10%;
         flex-wrap: wrap;
         margin-bottom: 2%;
+        border-radius: 20px;
     }
 
     .pcart-main{
         /* display: none; */
+        position: relative;
         height: 100%;
         width: 100%;
-        /* background-color: whitesmoke; */
+        background-color: whitesmoke;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding: 0;
+        border-radius: 20px;
     }
 
     .pcart-main .pcart-des {
-        min-height: 55%; /* Adjust as needed */
-        max-height: 55%; /* Adjust as needed */
+        position: absolute;
+        z-index: 2;
+        color: black;
+        min-height: 100%; /* Adjust as needed */
         min-width: 100%;
-        max-width: 100%;
         /* background-color: #112240; */
-        background: linear-gradient(to right, #0E131B 10%, #0E131B 60%);
-        color: #a8b2d1;
+        /* background: linear-gradient(to right, #0E131B 10%, #0E131B 60%); */
+        
         padding:10px;
         font-size: 14px;
         font-family: 'Montserrat', 'sans-serif';
@@ -106,21 +172,31 @@
         /* border-bottom: 2px dashed #766e6e; */
         border-top: linear-gradient(to right, #141621 40%, #28292e 60%);
         border-top-right-radius: 20px;
-        
+        font-weight: 600;
+        scrollbar-width: none;
     }
 
+    .pcart-main .pcart-des::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera hide scrollbar */
+    }
     .pcart-des h2{
+
         font-size: 25px;
         font-weight: 900;
-        color: whitesmoke;
+        color: #031b42;
+        text-align: center;
+        border-bottom: 2px solid #031b42;
     }
     .pcart-main .pcart-img{
-        position: relative;
-        height: 45%;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
         width: 100%;
-        /* border:10px solid #031b42; */
         background-color: #0E131B;
         object-fit: fill;
+        opacity: 0.5;
+        filter: blur(5px);
+
     }
     #preMain{
         display: none;
@@ -144,6 +220,31 @@
         height: 35px;
         width: 100px;
     }
-}   
+    #Sitelinks{
+        display: flex;
+        height: 15%;
+        width: 100%;
+        /* background-color: aqua; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
 
+    #Sitelinks a{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #webLink{
+        margin-top: 20px;
+        height: 60%;
+        width: 50%;
+    }
+    #gitLink{
+        margin-top: 20px;
+        height: 60%;
+        width: 50%;
+    }
+}  
 
